@@ -1,0 +1,10 @@
+0000000000000000000000000000000000000000 7968d4e67e13572c62c72f0001405c388640803a mariabamundo <mr25bamu@siena.edu> 1533565587 -0400	commit (initial): transitoning to using state for updates
+7968d4e67e13572c62c72f0001405c388640803a 8e047c43bf8a63b5638f3ab906e54b76b7765716 mariabamundo <mr25bamu@siena.edu> 1533574751 -0400	commit: trying to implement ListItem
+8e047c43bf8a63b5638f3ab906e54b76b7765716 0d31c3eb35d9308c9175eeb2262140fe074ed3d7 mariabamundo <mr25bamu@siena.edu> 1533578903 -0400	commit: Must fix addItem
+0d31c3eb35d9308c9175eeb2262140fe074ed3d7 489d1494e105e7b051de8ffdd616c9209740314c mariabamundo <mr25bamu@siena.edu> 1533583870 -0400	commit: must Comment and clean up code before testing
+489d1494e105e7b051de8ffdd616c9209740314c 6716340ebac9af549c892958ef8b41073773f814 mariabamundo <mr25bamu@siena.edu> 1533589482 -0400	commit: Done
+6716340ebac9af549c892958ef8b41073773f814 2fdc25b4ec8d44af25b95351e384f724a02a0682 mariabamundo <mr25bamu@siena.edu> 1533674691 -0400	commit: Testing?
+2fdc25b4ec8d44af25b95351e384f724a02a0682 b908bf232c131acaad27844b6b89156fd13a4454 mariabamundo <mr25bamu@siena.edu> 1533760802 -0400	commit: Started Testing
+b908bf232c131acaad27844b6b89156fd13a4454 73f99029d6fafcb00166bc73d6ab3068542bdc30 mariabamundo <mr25bamu@siena.edu> 1533761205 -0400	commit: Started testing
+73f99029d6fafcb00166bc73d6ab3068542bdc30 b0ae0765591c7471886502c8c65a3092cce7a9c7 mariabamundo <mr25bamu@siena.edu> 1533848823 -0400	commit: Backend testing
+b0ae0765591c7471886502c8c65a3092cce7a9c7 d293856bf32b8a426b5817e53544836b8d0106ed mariabamundo <mr25bamu@siena.edu> 1533849623 -0400	commit: comments
