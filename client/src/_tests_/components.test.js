@@ -7,9 +7,18 @@ import { HttpLink } from 'apollo-link-http';
 import fetch from 'node-fetch';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 
+//import components to be tested
 import App from '../components/App';
 import TaskList from '../components/TaskList';
+import ListItem from '../components/ListItem';
 
+//enzyme imports
+import { shallow, mount, render } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 /** Test structure**/
 //Setup initial State
 //Dispatch Action
@@ -23,34 +32,45 @@ const client = new ApolloClient({
     cache: new InMemoryCache()
 })
 
-/*App*/
+//Test Data
+const items = [
+    {
+        "id": "1",
+        "name": "temp",
+        "isDone": false
+    }
+];
 
-//A test to see if the app renders and matches snapshot
-describe('App', () => {
-    it('should render without crashing', () => {
+describe('Render Components', () => {
+
+    //App
+    it('Render App', () => {
         const rendered = renderer.create(
             <ApolloProvider client={client}>
                 <App />
             </ApolloProvider>
         );
-        expect(rendered).toMatchSnapshot();
+        expect(rendered).toBeTruthy();
     });
-});
 
-/*List Item*/
 
-/*Task List*/
-/*
-describe('TaskList', () => {
-    it('rendered correctly', () => {
+    //Task List
+    it('Render TaskList', () => {
         const rendered = renderer.create(
             <ApolloProvider client={client}>
-                <TaskList />
-            </ApolloProvider>)
+                <TaskList items={items}/>
+            </ApolloProvider>
+        );
+        expect(rendered).toBeTruthy();
+    });
+
+      //ListItem
+      it('Render ListItem', () => {
+        const rendered = renderer.create(
+            <ApolloProvider client={client}>
+                <ListItem task={items}/>
+            </ApolloProvider>
+        );
         expect(rendered).toBeTruthy();
     });
 });
-test('Checkbox changes after click', () => {
-  });
-
-*/

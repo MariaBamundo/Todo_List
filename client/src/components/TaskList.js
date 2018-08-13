@@ -43,7 +43,7 @@ class TaskList extends React.Component {
             update: (store, { data: { addTask } }) => {
                 this.setState({
                     name: '',
-                    items: [...this.state.items,addTask]
+                    items: [...this.state.items, addTask]
                 });
             },
         }).then(function handleChange(response) {
@@ -110,7 +110,7 @@ class TaskList extends React.Component {
                         />
                     </div>
                 </form>
-                
+
                 <ul className="tasks">
                     {
                         //Map the List of individual items 
@@ -138,6 +138,6 @@ class TaskList extends React.Component {
 //Export all querys and mutations used in this class aswell as the class itself
 export default compose(graphql(GET_TASKS, { name: 'getTasks' }),
     graphql(DELETE_TASK, { name: 'removeTask' }),
-    graphql(COMPLETE_TASK, { name: 'completeTask' }), 
-    graphql(ADD_TASK, { name: 'addNewTask'}))
+    graphql(COMPLETE_TASK, { name: 'completeTask' }),
+    graphql(ADD_TASK, { name: 'addNewTask' }))
     (TaskList);

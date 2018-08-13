@@ -3,8 +3,11 @@ const { graphql } = require('graphql');
 const tester = require('graphql-tester').tester;
 const { addMockFunctionsToSchema } = require('graphql-tools');
 
+//import schema
 const schema = require('../graphql/index').todoSchema;
 
+//Modifies the schema so it returns mock data for any valid query.
+//Perserve resolvers so the existing functions will not be overwritten
 addMockFunctionsToSchema({schema , preserveResolvers: true});
 
 describe('Types and resolvers: ', () => {

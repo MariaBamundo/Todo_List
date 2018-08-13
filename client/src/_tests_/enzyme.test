@@ -1,0 +1,40 @@
+import React from 'react';
+import App from '../components/App';
+import { ApolloProvider } from 'react-apollo';
+import { ApolloClient } from 'apollo-client';
+import { shallow, mount, render } from 'enzyme';
+import renderer from 'react-test-renderer';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+
+describe('App Component', () => {
+    it('should render without throwing an error', () => {
+        expect(shallow(<App />).exists(<div className="App"></div>)).toBe(true)
+        /*App renders all elements*//*
+        it('renders all parts', () => {
+            const props = [
+                {
+                    "id": "1",
+                    "name": "temp",
+                    "isDone": false
+                }
+            ];
+    
+            const wrapper = shallow(<App {...props} />);
+    
+            expect(wrapper.find(<div className="App" />).exists()).toBe(true);
+            
+            expect(wrapper.find(GreetWrapper).exists()).toBe(true);
+            expect(wrapper.find('span').text()).toBe('welcome John Doe');*/
+    })
+    it('renders correctly', () => {
+        const rendered = renderer.create(
+            <ApolloProvider client={client}>
+                <App />
+            </ApolloProvider>
+        );
+        expect(rendered).toMatchSnapshot();
+    });
+})

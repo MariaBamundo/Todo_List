@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Use Mock Data App 1`] = `
+<div>
+   loading 
+</div>
+`;
+
+exports[`Use Mock Data TaskList 1`] = `
+<div
+  className="taskList"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="input"
+    >
+      <input
+        className="addTask"
+        onChange={[Function]}
+        placeholder="Add a task"
+        value=""
+      />
+    </div>
+  </form>
+  <ul
+    className="tasks"
+  >
+    <li>
+      <input
+        checked={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        id="task1"
+      >
+        task1
+        <button
+          className="edit"
+          onClick={[Function]}
+        >
+          Edit
+        </button>
+      </span>
+      <button
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </li>
+    <li>
+      <input
+        checked={true}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        id="task2"
+      >
+        task2
+        <button
+          className="edit"
+          onClick={[Function]}
+        >
+          Edit
+        </button>
+      </span>
+      <button
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Use Mock Data TaskList 2`] = `
+<div
+  className="taskList"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="input"
+    >
+      <input
+        className="addTask"
+        onChange={[Function]}
+        placeholder="Add a task"
+        value=""
+      />
+    </div>
+  </form>
+  <ul
+    className="tasks"
+  >
+    <li>
+      <input
+        checked={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        id="task1"
+      >
+        task1
+        <button
+          className="edit"
+          onClick={[Function]}
+        >
+          Edit
+        </button>
+      </span>
+      <button
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </li>
+    <li>
+      <input
+        checked={true}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        id="task2"
+      >
+        task2
+        <button
+          className="edit"
+          onClick={[Function]}
+        >
+          Edit
+        </button>
+      </span>
+      <button
+        onClick={[Function]}
+      >
+        Delete
+      </button>
+    </li>
+  </ul>
+</div>
+`;
